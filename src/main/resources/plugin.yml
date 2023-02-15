@@ -1,0 +1,11 @@
+name: OreSell
+version: '${project.version}'
+main: dk.oresell.OreSell
+api-version: 1.8
+softdepend: [ OreCore ]
+authors: [ Nydt ]
+description: Sell plugin for /server ore
+website: mcstore.dk
+commands:
+  sell:
+    description: sells stuff
