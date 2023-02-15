@@ -18,13 +18,6 @@ public final class OreSell extends JavaPlugin {
         pluginManager = getServer().getPluginManager();
         instance = this;
 
-        //CONFIG.YML
-        if (!(new File(getDataFolder(), "config.yml")).exists())
-            saveResource("config.yml", false);
-
-        config = new Config(this, null, "config.yml");
-        configYML = config.getConfig();
-
         //MATERIAL.YML
         if (!(new File(getDataFolder(), "material.yml")).exists())
             saveResource("material.yml", false);
