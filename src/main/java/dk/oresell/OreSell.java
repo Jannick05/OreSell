@@ -1,7 +1,7 @@
 package dk.oresell;
 
+import dk.orecore.api.utils.Config;
 import dk.oresell.commands.Sell;
-import dk.oresell.utils.Config;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -31,13 +31,6 @@ public final class OreSell extends JavaPlugin {
 
         material = new Config(this, null, "material.yml");
         materialYML = material.getConfig();
-
-        //MULTIPLIER.YML
-        if (!(new File(getDataFolder(), "multiplier.yml")).exists())
-            saveResource("multiplier.yml", false);
-
-        multiplier = new Config(this, null, "multiplier.yml");
-        multiplierYML = multiplier.getConfig();
 
         //COMMANDS
         getCommand("Sell").setExecutor(new Sell());

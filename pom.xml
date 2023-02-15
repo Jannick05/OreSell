@@ -88,5 +88,10 @@
             <version>1.5.21</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.github.Jannick05</groupId>
+            <artifactId>OreCore</artifactId>
+            <version>50a2aa8b72</version>
+        </dependency>
     </dependencies>
 </project>
